@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/edc11941db.js" crossorigin="anonymous"></script>
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+<title>Julian Perez || Desarrollador Web</title>
+<link href="/dist/output.css" rel="stylesheet">
+</head>
+
+
+<body class="box-border w-full h-full scroll-smooth overflow-x-hidden bg-alert relative z-0">
+    <!-- Navegacion y hero section -->
+    <header id="inicio" class=" bg-background w-full h-screen p-5">
+        <nav class="flex place-content-between text-headline font-hind text-lg">
+            <!--logo/nombre-->
+            <p class="text-xl border-headline flex align-middle place-content-center font-bold uppercase">Julian <span class="w-6 h-6 bg-button rounded-full flex place-content-center">P</span></p>
+            <!--links barra de navegacion-->
+            <div class="flex place-content-center align-middle ">
+                <ul class="sm:flex gap-10 hidden">
+                    <li class="hover:text-paragraph"><a href="#sobre-mi">Sobre Mi</a></li>
+                    <li class="hover:text-paragraph"><a href="#proyectos">Proyectos</a></li>
+                    <li class="hover:text-paragraph"><a href="#contacto">Contacto</a></li>
+                </ul>
+                <!--barra responsive-->
+                <div class=" flex sm:hidden" x-data="{ open: false }" x-transition>
+                    
+                        <img  class="w-7 sm:hidden z-20 fixed right-3 opacity-90 " src="./img/bars-solid.svg" alt=""  @click="open = ! open" x-transition>
+       
+                    <ul class="flex flex-col gap-8 right-0 top-0 w-52 h-screen bg-background z-10 text-button opacity-95 pt-20 pl-10 fixed border-l-2" x-show="open" @click.outside="open = false" >
+                        <li class="hover:text-paragraph opacity-100"><a href="#sobre-mi">Sobre Mi</a></li>
+                        <li class="hover:text-paragraph"><a href="#proyectos">Proyectos</a></li>
+                        <li class="hover:text-paragraph"><a href="#contacto">Contacto</a></li>
+                        <li><button class="bg-headline text-background w-36 h-8 rounded-2xl items-center flex align-middle justify-center gap-2"><a class="flex align-middle justify-center items-center gap-2 w-full h-full" href="https://www.linkedin.com/in/julian-perez-a5b656157/" target="_blank"><img class="w-4 hover:animate-spin" src="./img/linkedin-in.svg" alt="" >LinkedIn</a></button></li>
+                        <li><button class="bg-headline text-background w-36 h-8 rounded-2xl"><a class="flex align-middle justify-center items-center gap-2" href="https://github.com/jucajulian0907" target="_blank"><img class="w-4 hover:animate-spin" src="./img/github.svg" alt=""><span>Github</span></a></button></li>
+                    </ul>
+                </div>
+            </div>
+            
+
+        </nav>
+        <!-- Titulo y boton de llamada a la accion (boton a contactos y github) -->
+
+        <section class="w-full h-screen grid place-content-center font-monserrat text-headline">
+            <!-- Encabezado -->
+            <div class="">
+                <p class="text-5xl sm:text-7xl font-monserrat">Diseñador <br> <span class="font-bold text-button animate-pulse">&</span> Desarrollador Front <span class="font-bold text-button animate-pulse">End</span></p>
+                <p class="text-lg font-hind">Hola, soy Julian Perez, desarrollador y diseñador web autodidacta.</p>
+            </div>
+
+            
+
+            <div class="flex sm:flex-row sm:justify-start justify-center gap-5 w-full text-lg py-6 font-bold">
+                <button class=" bg-button text-background w-36 h-10 rounded-2xl hover:bg-background hover:text-button hover:ring hover:ring-button hover:transition-all"><a class=href="#contacto">Contacto</a></button>
+                <button class="bg-headline text-background w-36 h-10 rounded-2xl"><a class="flex align-middle justify-center items-center gap-2" href="https://github.com/jucajulian0907" target="_blank"><img class="w-5 hover:animate-spin" src="./img/github.svg" alt=""><span>Github</span></a></button>
+            
+        </div>
+    </section>
+</header>
+<main class="w-full h-full  bg-headline">
+    <!-- Sobre Mi  -->
+        <section id="sobre-mi" class="w-full h-fit scroll-smooth bg-headline mb-10 p-5">
+            <h2 class="font-monserrat text-2xl text-background mb-3">Sobre Mi</h2>
+
+            <p class="font-hind text-sub-healine w-auto text-lg text-justify">
+                Apasionado por la tecnología (y los jueguitos) desde que tengo memoria, escribí mi primera línea de código hace poco tiempo, lo que despertó mis ganas a dedicarme a esto. Desde entonces decidí formarme de forma autodidacta, principalmente a lo que refiere a Desarrollo Front-end y Diseño UI.
+                <br>
+                <br>
+                Me encuentro en una etapa de continuo aprendizaje y descubrimiento que me llevan a abrazar cualquier nuevo desafío que se me presente, pero sin perder el foco en perfeccionar mis habilidades, por lo que estoy abierto a puestos de Trainee o Junior, pasantías así como la disponibilidad de trabajar de manera freelance.
+            </p>    
+
+            <h3 class="text-xl font-bold font-hind text-sub-healine mt-10">Puedo trabajar con estas tecnologias:</h3>
+
+        
+        
+            <!-- ///////////////// ICONOS DE TECNOLOGIAS /////////////////////// -->
+            
+        <div class="grid grid-flow-col sm:grid-rows-1 grid-rows-2 justify-between mt-10 gap-10 ">
+            <!--html-->
+            <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+            
+            <!--css-->
+            <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+            
+            <!--sass-->
+            <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+            
+            <!--bootstrap-->
+            <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" />
+          
+            <!--tailwind-->
+            <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
+
+            <!--javascript-->
+            <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+        </div>
+
+        <h3 class="text-xl font-bold font-hind text-sub-healine mt-10">Herramientas de diseño:</h3>
+        
+        <div class="grid grid-flow-col sm:grid-rows-1  grid-rows-2 justify-around sm:justify-between mt-10 gap-10">
+
+        <!--Tecnologias de diseño-->
+        <!--Figma-->
+        <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+
+        <!--adobe xd-->
+        <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-line.svg" />
+        
+        <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" />
+
+        
+        <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg" />
+          
+             
+
+        </div>
+
+            <!-- /////////////////////////////////////////////////////////////// -->
+          
+
+
+
+
+        <!-- ///////////////// SOBRE MI /////////////////////// -->
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos" class="bg-background h-fit w-full flex flex-col place-content-center align-middle text-headline font-monserrat  text-md rounded-lg">
+            <h2 class="font-monserrat text-3xl text-headline mt-3 mb-3 text-center p-3 border-b-[3px] border-button">Proyectos</h2>
+            
+            <div class="bg-background inline-grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 gap-5 place-content-center ">
+            
+            <figure class=" bg-sub-healine w-auto h-auto flex flex-col justify-center m-5 shadow-[-5px_5px_0px_0px_rgba(255,137,6,0.75)] rounded-lg">
+                <img class="p-4 w-auto h-auto rounded-md overflow-hidden" src="./img/responsive-lpage.jpg" alt="">
+                    <a class="flex gap-2 align-middle place-content-center mb-2" href="https://jucajulian0907.github.io/blogr-landing-page.github.io/" target="_blank">Responsive landing page <img class="w-5" src="./img/arrow-up-right-from-square-solid.svg" alt=""></a>
+               
+            </figure>
+
+            <figure class="bg-sub-healine w-auto h-auto flex flex-col justify-center  m-5 shadow-[-5px_5px_0px_0px_rgba(255,137,6,0.75)] rounded-lg">
+                <img class="p-4 w-auto h-auto" src="./img/form-coming-soon.jpg" alt="">
+                    <a class="flex gap-2 align-middle place-content-center mb-2" href="https://jucajulian0907.github.io/base-apparel.github.io/" target="_blank">Newslatter  form<img class="w-5" src="./img/arrow-up-right-from-square-solid.svg" alt=""></a>
+            </figure>
+
+
+            <figure class="bg-sub-healine w-auto h-auto flex flex-col justify-center  m-5 shadow-[-5px_5px_0px_0px_rgba(255,137,6,0.75)] rounded-lg">
+                <img class="p-4 w-auto h-auto"  src="./img/form-2.jpg" alt="">
+                <a class="flex gap-2 align-middle place-content-center mb-2" href="https://intro-signup-form-component.netlify.app" target="_blank">Component sign-up form<img class="w-5" src="./img/arrow-up-right-from-square-solid.svg" alt=""></a>
+                
+
+            </figure>
+
+            <figure class="bg-sub-healine w-auto h-auto flex flex-col justify-center  m-5 shadow-[-5px_5px_0px_0px_rgba(255,137,6,0.75)] rounded-lg">
+                <img class="p-4 w-auto h-auto"  src="./img/card-component.jpg" alt="">
+                <a class="flex gap-2 align-middle place-content-center mb-2" href="https://jucajulian0907.github.io/stats-preview.github.io/" target="_blank">Card component<img class="w-5" src="./img/arrow-up-right-from-square-solid.svg" alt=""></a>
+                
+
+            </figure>
+
+            <figure class="bg-sub-healine w-auto h-auto flex flex-col justify-center  m-5 shadow-[-5px_5px_0px_0px_rgba(255,137,6,0.75)] rounded-lg">
+                <img class="p-4 w-auto h-auto"  src="./img/ping-coming-soon.jpg" alt="">
+                <a class="flex gap-2 align-middle place-content-center mb-2" href="https://jucajulian0907.github.io/ping-coming-soon.github.io/" target="_blank">Coming soon page<img class="w-5" src="./img/arrow-up-right-from-square-solid.svg" alt=""></a>
+               
+
+            </figure>
+
+            <figure class="bg-sub-healine w-auto h-auto flex flex-col justify-center  m-5 shadow-[-5px_5px_0px_0px_rgba(255,137,6,0.75)] rounded-lg">
+                <img class="p-4 w-auto h-auto"  src="./img/intro-section.jpg" alt="">
+                <a class="flex gap-2 align-middle place-content-center mb-2" href="https://jucajulian0907.github.io/snap-landing-page.github.io/" target="_blank">Responsive Landing Page<img class="w-5" src="./img/arrow-up-right-from-square-solid.svg" alt=""></a>
+               
+
+            </figure>
+        </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="contacto" class="w-full h-screen mt-20">
+
+            <h2 class="text-2xl font-bold text-background font-hind text-center">Por mas información puedes contactarme</h2>
+        <div class="bg-white rounded-lg shadow-xl p-10 mt-5">
+            
+            <form class="space-y-3 max-w-xl grid grid-cols-1 justify-center mx-auto" name="contact" method="POST" data-netlify="true" id="formulario">
+                
+                <div class="flex flex-col space-y-2">
+                   <input id="nombre" class="border border-gray-300 px-3 py-2 rounded-lg" type="text" name="name" placeholder="Escribe tu nombre"/>
+                </div>
+                
+                <div class="flex flex-col space-y-2">
+                  <input id="email" class="border border-gray-300 px-3 py-2 rounded-lg" type="email" name="email"  placeholder="Escribe tu email"/>
+                </div>
+               
+                <div class="flex flex-col space-y-2">
+                  <textarea id="mensaje" class="border border-gray-300 px-3 py-2 rounded-lg h-36 resize-none" name="message" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                
+                <div>
+                  <button class="w-full flex-1 bg-button text-sub-healine font-semibold font-hind text-xl flex justify-center gap-2 items-center rounded-md p-3" type="submit">Enviar mensaje</button>
+                </div>
+              </form>
+            </div>
+
+
+        </section>
+    </main>
+    <footer class="w-full h-fit bg-background p-5">
+    
+        <!--links barra de navegacion-->
+        <div class="flex  justify-between mb-5">
+            <ul class="text-base flex flex-col sm:flex-row  text-headline gap-5">
+                <li class="hover:text-paragraph"><a href="#inicio">Volver al inicio</a></li>
+                <li class="hover:text-paragraph"><a href="#sobre-mi">Volver a sobre mí</a></li>
+                <li class="hover:text-paragraph"><a href="#proyectos">Volver a proyectos</a></li>
+            </ul>
+            
+            <a class="w-10" href="https://www.linkedin.com/in/julian-perez-a5b656157/" target="_blank"><img src="./img/linkedin.svg" alt=""></a>
+        </div>
+
+        <div class="flex flex-col place-content-center text-center text-paragraph">
+            <p>&copy; Julián Pérez. 2022.</p>
+            <p class="italic">Versión 1.0</p>
+        </div>    
+    </footer>
+
+    <script src="./src/app.js"></script>
+</body>
+</html>
