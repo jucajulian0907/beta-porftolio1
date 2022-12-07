@@ -33,12 +33,6 @@ btnReset.addEventListener('click', function(e) {
 function enviarEmail(e) {
     e.preventDefault();
 
-    spinner.classList.add('flex');
-    spinner.classList.remove('hidden');
-
-    setTimeout(() => {
-        spinner.classList.add('hidden');
-    spinner.classList.remove('flex');
 
      resetFormulario();
 
@@ -52,7 +46,6 @@ function enviarEmail(e) {
         alertaExito.remove();
      }, 4000)
 
-    }, 4000)
 }
 
 
