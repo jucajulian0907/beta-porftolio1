@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Diseñador y Desarrollador Web Freelance. ¿Necesitas una página web para tu negocio? ¿Quieres mejorar la experiencia de usuario en tu sitio? ¡Yo estoy aquí para ayudarte!">
+<meta name="keywords" content="web, diseño web, desarrollor web, desarrollador, diseñador, desarrollador web, ecommerce, consultoria, freelance">
+<meta property="og:title" content="Julián Pérez. Diseñador y Desarrollador Web">
+<meta property="og:description" content="¿Necesitas una página web para tu negocio? ¿Quieres mejorar la experiencia de usuario en tu sitio? ¡Yo estoy aquí para ayudarte!">
+<meta property="og:image" content="img/website-capture.png">
+<meta property="og:type" content="Sitio Web"> 
 <script src="https://kit.fontawesome.com/edc11941db.js" crossorigin="anonymous"></script>
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,38 +18,61 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-<title>Julian Perez || Desarrollador Web</title>
+<title>Julian Pérez | Diseñador y Desarrollador Web</title>
 <link href="/dist/output.css" rel="stylesheet">
 </head>
 
 
-<body class="box-border w-full h-full scroll-smooth overflow-x-hidden bg-alert relative z-0">
+</style>
+
+<body class="box-border w-full h-full scroll-smooth overflow-x-hidden bg-background fade-in">
     <!-- Navegacion y hero section -->
-    <header id="inicio" class=" bg-background w-full h-screen p-8">
-        <nav class="flex place-content-between text-headline font-hind text-lg">
+    <header id="inicio" class="gradient-box h-fit lg:h-screen px-4 md:px-16 rounded-br-xl ">
+        <nav class="flex place-content-between items-center bg-opacity-0 text-headline font-hind text-lg h-fit ">
             <!--logo/nombre-->
-            <p class="text-xl border-headline flex align-middle place-content-center font-bold uppercase">Julian <span class="w-6 h-6 bg-button rounded-full flex place-content-center">P</span></p>
+            <a href="index.html"><img src="img/julianpe-logo.png" alt="logo" class="w-32"></a>
             <!--links barra de navegacion-->
             <div class="flex place-content-center align-middle ">
-                <ul class="sm:flex gap-10 hidden">
-                    <li class="hover:text-paragraph"><a href="#sobre-mi">Sobre Mi</a></li>
-                    <li class="hover:text-paragraph"><a href="#proyectos">Proyectos</a></li>
-                    <li class="hover:text-paragraph"><a href="#contacto">Contacto</a></li>
+                <ul class="md:flex gap-10 hidden">
+                    <li class="hover:text-paragraph"><a href="#servicios">Servicios</a></li>
+                    <li class="hover:text-paragraph"><a href="proyectos.html">Proyectos</a></li>
+                    <li class="bg-background-blue hover:text-background w-36 h-8 rounded-2xl hover:bg-button text-button ring ring-button hover:transition-all flex justify-center items-center hover:font-bold "><a href="#contacto">Contacto</a></li>
                 </ul>
                 <!--barra responsive-->
-                <div class=" flex sm:hidden" x-data="{ open: false }" x-transition>
+                <div class="flex md:hidden items-center" x-data="{ open: false }" x-transition>
                     
-                        <img  class="w-7 sm:hidden z-20 fixed right-3 opacity-90 " src="./img/bars-solid.svg" alt=""  @click="open = ! open" x-transition>
-       
-                    <ul class="flex flex-col gap-8 right-0 top-0 w-52 h-screen bg-background z-10 text-button opacity-95 pt-20 pl-10 fixed border-l-2" x-show="open" @click.outside="open = false" >
-                        <li class="hover:text-paragraph opacity-100"><a href="#sobre-mi">Sobre Mi</a></li>
-                        <li class="hover:text-paragraph"><a href="#proyectos">Proyectos</a></li>
-                        <li class="hover:text-paragraph"><a href="#contacto">Contacto</a></li>
-                        <li><button class="bg-headline text-background w-36 h-8 rounded-2xl items-center flex align-middle justify-center gap-2"><a class="flex align-middle justify-center items-center gap-2 w-full h-full" href="https://www.linkedin.com/in/julian-perez-a5b656157/" target="_blank"><img class="w-4 hover:animate-spin" src="./img/linkedin-in.svg" alt="" >LinkedIn</a></button></li>
-                        <li><button class="bg-headline text-background w-36 h-8 rounded-2xl"><a class="flex align-middle justify-center items-center gap-2" href="https://github.com/jucajulian0907" target="_blank"><img class="w-4 hover:animate-spin" src="./img/github.svg" alt=""><span>Github</span></a></button></li>
+                    
+                    <img  class="flex md:hidden z-20 fixed opacity-90 w-8 right-4" src="./img/bars-solid.svg" alt=""  @click="open = ! open" x-transition>
+                   
+                    
+                   
+                    <div class="flex flex-col gap-8 right-0 top-0 w-full h-screen gradient-box z-10 text-button-text text-center text-2xl font-medium font-josefin pt-20 fixed  justify-between align-middle overflow-y-hidden" x-show="open" @click.outside="open = false" x-transition>
+                    
+                    
+
+                    <ul class="flex flex-col gap-8 w-full bg-opacity-0 z-10 text-button-text text-center text-2xl font-medium font-josefin pt-8">
+                        <li class="hover:text-paragraph" @click="open = ! open"><a href="#servicios">Inicio</a></li>
+                        <li class="hover:text-paragraph" @click="open = ! open"><a href="#servicios">Servicios</a></li>
+                        <li class="hover:text-paragraph" @click="open = ! open"><a href="proyectos.html">Proyectos</a></li>
+                        <li class="hover:text-paragraph" @click="open = ! open"><a href="#contacto">Contacto</a></li>
+
                     </ul>
+                    
+                    <div class="z-10 container flex justify-center items-center gap-4 pb-8">
+                        <a class="w-6" href="https://www.linkedin.com/in/julian-perez-a5b656157/" target="_blank"><img src="./img/linkedin.svg" alt=""></a>
+                        <a class="w-6" href="#" target="_blank"><img src="./img/instagram.svg" alt=""></a>
+                        <a class="w-6 fill-headline" href="https://github.com/jucajulian0907" target="_blank"><img src="./img/square-github.svg" alt=""></a>
+                        <a class="w-6" href="https://wa.me/59892472810?text=!Hola¡%20Estoy%20interesado%20en%20tus%20servicios.%20¿Podemos%20marcar%20una%20reunión?" target="_blank"><img src="./img/whatsapp.svg" alt=""></a>
+                    </div>
+                       
+                
+                   </div> 
+                   
                 </div>
             </div>
             
@@ -51,182 +80,304 @@
         </nav>
         <!-- Titulo y boton de llamada a la accion (boton a contactos y github) -->
 
-        <section class="w-full h-screen grid place-content-center font-monserrat text-headline">
+        <section class="flex flex-col lg:flex-row h-screen w-full place-content-center items-center font-montserrat text-headline transition-all justify-around md:justify-evenly md:align-middle lg:justify-between align-middle py-16  lg:pt-8 lg:pb-16 md:items-center ">
             <!-- Encabezado -->
-            <div class="">
-                <p class="text-5xl sm:text-7xl font-monserrat">Diseñador <br> <span class="font-bold text-button animate-pulse">&</span> Desarrollador Front <span class="font-bold text-button animate-pulse">End</span></p>
-                <p class="text-lg font-hind leading-loose">¡Hola! Soy Julián Pérez, desarrollador y diseñador web autodidacta.</p>
+            <div class="text-center lg:text-left w-full md:max-w-xs lg:max-w-md">
+                <p class="text-2xl font-hind leading-loose font-medium mb-4">¡Hola, soy Julián Pérez!</p>
+                <p class=" text-5xl lg:text-7xl font-josefin font-bold">Diseñador <span class="font-bold text-button animate-colorchange">&</span> Desarrollador Web</p>
+
+                <div class="flex flex-row lg:justify-start justify-center gap-5 w-full text-lg py-6 font-bold">
+                    <button class=" bg-button text-background w-36 h-10 rounded-2xl hover:bg-background-blue hover:text-button hover:ring hover:ring-button transition-all hover:transition-all"><a href="#servicios">Servicios</a></button>
+                    <button class="bg-headline text-background w-36 h-10 rounded-2xl"><a class="flex align-middle justify-center items-center gap-2" href="https://github.com/jucajulian0907" target="_blank"><img class="w-5 hover:animate-spin" src="./img/github.svg" alt=""><span>Github</span></a></button>
+                </div>
             </div>
 
-            
-
-            <div class="flex sm:flex-row sm:justify-start justify-center gap-5 w-full text-lg py-6 font-bold">
-                <button class=" bg-button text-background w-36 h-10 rounded-2xl hover:bg-background hover:text-button hover:ring hover:ring-button hover:transition-all"><a href="#contacto">Contacto</a></button>
-                <button class="bg-headline text-background w-36 h-10 rounded-2xl"><a class="flex align-middle justify-center items-center gap-2" href="https://github.com/jucajulian0907" target="_blank"><img class="w-5 hover:animate-spin" src="./img/github.svg" alt=""><span>Github</span></a></button>
-            
-        </div>
+            <div class="py-8 md:pl-8 w-full md:flex max-w-lg md:w-full md:justify-between relative container">
+               <img src="img/wordpress-icons.svg" alt="" class="">
+            </div>
     </section>
 </header>
-<main class="w-full h-full  bg-headline">
+
+<main class="w-full h-full bg-headline flex flex-col gap-8">
     <!-- Sobre Mi  -->
-        <section id="sobre-mi" class="w-full h-fit scroll-smooth bg-headline mb-10 p-8">
-            <h2 class="font-monserrat text-2xl text-background mb-3">Sobre Mi</h2>
+        <section id="sobre-mi" class="w-full h-fit scroll-smooth bg-headline px-2 md:px-16 py-12">
+            <h2 class="font-josefin mb-8 text-4xl text-background font-medium text-center">Sobre Mi</h2>
+            <article class="flex justify-between py-8">
+                
+                <p  class="font-hind text-sub-healine w-auto text-lg md:text-xl text-center px-2 md:px-16 py-8 backdrop-blur-sm bg-background-blue/10 rounded-xl">
+                    Soy un desarrollador apasionado por la tecnología y el diseño, siempre con ganas de ayudar a las personas a llevar a cabo sus proyectos web. Mi objetivo es ofrecerte una experiencia de usuario totalmente personalizada y  asi asegurarme de que estés completamente satisfecho con mi trabajo. <br> <strong>¿Necesitas una página web para tu negocio?, ¿Quieres un portfolio donde mostrar tus habilidades? O, ¿Eres un artista que quiere mostrar su trabajo? ¡Yo estoy aquí para ayudarte!</strong>
+                </p>
+           </article>  
 
-            <p class="font-hind text-sub-healine w-auto text-lg text-justify">
-                Apasionado por la tecnología (y los jueguitos) desde que tengo memoria, escribí mi primera línea de código hace poco tiempo, lo que despertó mis ganas a dedicarme a esto. Desde entonces decidí formarme de forma autodidacta, principalmente a lo que refiere a Desarrollo Front-end y Diseño UI.
-                <br>
-                <br>
-                Me encuentro en una etapa de continuo aprendizaje y descubrimiento que me llevan a abrazar cualquier nuevo desafío que se me presente, pero sin perder el foco en perfeccionar mis habilidades, por lo que estoy abierto a puestos de Trainee o Junior, pasantías así como la disponibilidad de trabajar de manera freelance.
-            </p>    
+        <h3 class="text-lg md:text-xl font-medium font-hind text-sub-healine mt-8 mb-16 text-center relative">Puedo trabajar con estas tecnologias y herramientas de diseño</h3>
 
-            <h3 class="text-xl font-bold font-hind text-sub-healine mt-10">Puedo trabajar con estas tecnologias:</h3>
+        <!-- ///////////////// ICONOS DE TECNOLOGIAS /////////////////////// -->
 
+        <style>
+            @keyframes marquee {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: -400%;
+        }
+    }
+    .animate {
+        width: 800%;
+        animation: marquee 30s linear infinite;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    .animate:hover {
+                animation-play-state: paused;
+            }
+
+    .logo img {
+        width: 80px;
+        -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    @screen lg {
+        @keyframes marquee {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: -100%;
+            }
+        }
+    
+            .animate {
+                width: 200%;
+                animation: marquee 30s linear infinite;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+            .logo img {
+                width: 100px;
+                -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            }
+       
+            .animate:hover {
+                animation-play-state: paused;
+            }
+            .logo img:hover {
+                transform: scale(1.3);
+            }
+    }
+        </style>
+        
+        <div class="w-full  container mt-8 overflow-hidden p-16 relative">
+
+            <div class="flex animate absolute left-0 gap-8 h-20 w-full opacity-80 hover:opacity-100"> 
+               
+                <div class="flex w-1/2  gap-8 justify-around items-center align-middle logo">
+                
+                    <img src="img/alpine-wordmark-1.svg" alt="" class="w-20">    
+    
+                    <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="css" title="Css"/>
+                    
+                    <!--bootstrap-->
+                    <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg"  alt="bootstrap" title="Bootstrap"/>
+                  
+                    <!--tailwind-->
+                    <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="tailwind css" title="Tailwind css"/>
+        
+                    <!--javascript-->
+                    <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"  alt="javascript" title="Javascript"/>
         
         
-            <!-- ///////////////// ICONOS DE TECNOLOGIAS /////////////////////// -->
-            
-        <div class="grid grid-flow-col sm:grid-rows-1 grid-rows-2 justify-between mt-10 gap-10 ">
-            <!--html-->
-            <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
-            
-            <!--css-->
-            <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
-            
-            <!--sass-->
-            <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-            
-            <!--bootstrap-->
-            <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" />
+                    <img class="w-16" src="img/astro-icon-dark.svg" alt="astro framework" title="Astro framework"/>
+                    
+                    
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" class="w-20"/>
           
-            <!--tailwind-->
-            <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
 
-            <!--javascript-->
-            <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-        </div>
 
-        <h3 class="text-xl font-bold font-hind text-sub-healine mt-10">Herramientas de diseño:</h3>
-        
-        <div class="grid grid-flow-col sm:grid-rows-1  grid-rows-2 justify-around sm:justify-between mt-10 gap-10">
-
-        <!--Tecnologias de diseño-->
-        <!--Figma-->
-        <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
-
-        <!--adobe xd-->
-        <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-line.svg" />
-        
-        <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" />
-
-        
-        <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg" />
+                        <img class="w-20" alt="woocommerce" title="woocommerce" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-plain-wordmark.svg" />
           
-             
+    
+                        <img class="w-20" alt="figma" title="Figma" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+    
+                        <!--adobe xd-->
+                        <img class="w-20" alt="Adobe XD" title="Adobe XD" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-line.svg" />
+                        
+                        <img class="w-20" alt="canva" title="Canva" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" />
+                
+                        
+                        <img class="w-20" alt="illustrator" title="Adobe Illustrator" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg" />
+                </div>
+                
+                <div class="flex w-1/2  gap-8 justify-around items-center align-middle logo">
+                    
+                    <img src="img/alpine-wordmark-1.svg" alt="" class="w-20">    
 
-        </div>
+                    <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="css" title="Css"/>
+                
+                <!--bootstrap-->
+                    <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg"  alt="bootstrap" title="Bootstrap"/>
+              
+                <!--tailwind-->
+                    <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="tailwind css" title="Tailwind css"/>
+    
+                <!--javascript-->
+                    <img class="w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"  alt="javascript" title="Javascript"/>
+    
+    
+                    <img class="w-16" src="img/astro-icon-dark.svg" alt="astro framework" title="Astro framework"/>
+                
+                
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" class="w-20"/>
 
-            <!-- /////////////////////////////////////////////////////////////// -->
-          
+                    <img class="w-20" alt="woocommerce" title="woocommerce" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-plain-wordmark.svg" />
 
+                    <img class="w-20" alt="figma" title="Figma" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
 
-
-
-        <!-- ///////////////// SOBRE MI /////////////////////// -->
-        </section>
-
-        <!-- Proyectos -->
-        <section id="proyectos" class="bg-background h-fit w-full flex flex-col place-content-center align-middle text-headline font-monserrat  text-md rounded-lg">
-            <h2 class="font-monserrat text-3xl text-headline mt-3 mb-3 text-center p-3">Proyectos</h2>
+                    <!--adobe xd-->
+                    <img class="w-20" alt="Adobe XD" title="Adobe XD" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-line.svg" />
+                    
+                    <img class="w-20" alt="canva" title="Canva" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" />
             
-            <div class="bg-background inline-grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 gap-5 place-content-center ">
-            
-            <figure class=" bg-sub-healine w-auto h-auto flex flex-col justify-center m-5 shadow-[-5px_5px_0px_0px_rgba(255,137,6,0.75)] rounded-lg">
-                <img class="p-4 w-auto h-auto rounded-md overflow-hidden" src="./img/responsive-lpage.jpg" alt="">
-                    <a class="flex gap-2 align-middle place-content-center mb-2" href="https://jucajulian0907.github.io/blogr-landing-page.github.io/" target="_blank">Responsive landing page <img class="w-5" src="./img/arrow-up-right-from-square-solid.svg" alt=""></a>
-               
-            </figure>
-
-            <figure class="bg-sub-healine w-auto h-auto flex flex-col justify-center  m-5 shadow-[-5px_5px_0px_0px_rgba(255,137,6,0.75)] rounded-lg">
-                <img class="p-4 w-auto h-auto" src="./img/form-coming-soon.jpg" alt="">
-                    <a class="flex gap-2 align-middle place-content-center mb-2" href="https://jucajulian0907.github.io/base-apparel.github.io/" target="_blank">Newslatter  form<img class="w-5" src="./img/arrow-up-right-from-square-solid.svg" alt=""></a>
-            </figure>
-
-
-            <figure class="bg-sub-healine w-auto h-auto flex flex-col justify-center  m-5 shadow-[-5px_5px_0px_0px_rgba(255,137,6,0.75)] rounded-lg">
-                <img class="p-4 w-auto h-auto"  src="./img/form-2.jpg" alt="">
-                <a class="flex gap-2 align-middle place-content-center mb-2" href="https://intro-signup-form-component.netlify.app" target="_blank">Component sign-up form<img class="w-5" src="./img/arrow-up-right-from-square-solid.svg" alt=""></a>
-                
-
-            </figure>
-
-            <figure class="bg-sub-healine w-auto h-auto flex flex-col justify-center  m-5 shadow-[-5px_5px_0px_0px_rgba(255,137,6,0.75)] rounded-lg">
-                <img class="p-4 w-auto h-auto"  src="./img/card-component.jpg" alt="">
-                <a class="flex gap-2 align-middle place-content-center mb-2" href="https://jucajulian0907.github.io/stats-preview.github.io/" target="_blank">Card component<img class="w-5" src="./img/arrow-up-right-from-square-solid.svg" alt=""></a>
-                
-
-            </figure>
-
-            <figure class="bg-sub-healine w-auto h-auto flex flex-col justify-center  m-5 shadow-[-5px_5px_0px_0px_rgba(255,137,6,0.75)] rounded-lg">
-                <img class="p-4 w-auto h-auto"  src="./img/ping-coming-soon.jpg" alt="">
-                <a class="flex gap-2 align-middle place-content-center mb-2" href="https://jucajulian0907.github.io/ping-coming-soon.github.io/" target="_blank">Coming soon page<img class="w-5" src="./img/arrow-up-right-from-square-solid.svg" alt=""></a>
-               
-
-            </figure>
-
-            <figure class="bg-sub-healine w-auto h-auto flex flex-col justify-center  m-5 shadow-[-5px_5px_0px_0px_rgba(255,137,6,0.75)] rounded-lg">
-                <img class="p-4 w-auto h-auto"  src="./img/intro-section.jpg" alt="">
-                <a class="flex gap-2 align-middle place-content-center mb-2" href="https://jucajulian0907.github.io/snap-landing-page.github.io/" target="_blank">Responsive Landing Page<img class="w-5" src="./img/arrow-up-right-from-square-solid.svg" alt=""></a>
-               
-
-            </figure>
-        </div>
-        </section>
-
-        <!-- Formulario de Contacto -->
-        <section id="contacto" class="w-full h-screen mt-20">
-
-            <h2 class="text-2xl font-bold text-background font-hind text-center">Por mas información puedes contactarme</h2>
-        <div class="bg-white rounded-lg shadow-xl p-10 mt-5">
-            
-            <form class="space-y-3 max-w-xl grid grid-cols-1 justify-center mx-auto" name="contact" action="success" method="POST" data-netlify="true" id="formulario">
-                
-                <div class="flex flex-col space-y-2">
-                   <input id="nombre" class="border border-gray-300 px-3 py-2 rounded-lg" type="text" name="name" placeholder="Escribe tu nombre"/>
+                    
+                    <img class="w-20" alt="illustrator" title="Adobe Illustrator" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg" />
                 </div>
-                
-                <div class="flex flex-col space-y-2">
-                  <input id="email" class="border border-gray-300 px-3 py-2 rounded-lg" type="email" name="email"  placeholder="Escribe tu email"/>
-                </div>
-               
-                <div class="flex flex-col space-y-2">
-                  <textarea id="mensaje" class="border border-gray-300 px-3 py-2 rounded-lg h-36 resize-none" name="message" placeholder="Escribe tu mensaje"></textarea>
-                </div>
-                
-                <div>
-                  <button class="w-full flex-1 bg-button text-sub-healine font-semibold font-hind text-xl flex justify-center gap-2 items-center rounded-md p-3" type="submit">Enviar mensaje</button>
-                </div>
-              </form>
             </div>
 
+        </div> 
+    
+        </section>
 
+
+
+
+
+
+        <!--    SECCION DE SERVICIOS   -->
+
+        <section id="servicios" class="px-8 py-16 md:px-16 text-center font-hind gradient-box mt-8 animate-bg bg-position">
+
+            <h2 class="font-josefin mb-8 text-3xl md:text-5xl text-headline font-medium text-center">Mis Servicios</h2>
+
+            <div id="contenedor-servicios" class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-14 ">
+
+
+                <div class="mb-8 md:col-span-2 lg:col-span-1 md:flex-1 flex flex-col items-center justify-start shadow-xl rounded-xl px-4 py-4 backdrop-blur-sm bg-button-text/10">
+                    <h3 class="font-hind mb-8 text-xl text-button-text font-medium">Diseño y Desarrollo Web</h3>
+                    <img src="img/consultoria.png" alt="Web Design" class="w-60">
+                    <p class="text-button-text text-lg py-4 text-center"><span class="font-medium">¿Tienes un proyecto en mente?</span>
+                    <br>
+                    <br>    
+                    Puedo crear para ti un sitio web que sea visualmente atractivo, fácil de usar y que transmita correctamente tu mensaje. Trabajaré contigo para entender tus necesidades y construir un sitio web que sea práctico y eficiente para tus visitantes.</p>
+                </div>
+    
+                <div class="mb-8 md:flex-1 shadow-xl flex flex-col items-center justify-start rounded-xl px-4 py-4 backdrop-blur-sm bg-button-text/10">
+                <h3 class="font-hind mb-16 text-xl text-button-text font-medium">E-commerce</h3>
+                <img src="img/ecommerce.png" alt="Ecommerce" class="w-72">
+                    <p class="text-button-text text-lg py-4">
+                        <span class="font-medium">¿Quieres vender en línea sin complicaciones?</span> 
+                        <br>
+                        <br>
+                        Puedo ayudarte a crear una tienda en línea que sea fácil de navegar y que tenga un diseño simple pero efectivo. Trabajaré contigo para entender tus necesidades y construir una tienda en línea que se adapte a tu negocio y a tus clientes.</p>
+                </div>
+    
+                <div class="mb-8  md:flex-1 shadow-xl flex flex-col items-center justify-start rounded-xl px-4 py-4 backdrop-blur-sm bg-button-text/10">
+                    <h3 class="font-hind mb-8 text-xl text-button-text font-medium">Consultorias</h3>
+                    <img src="img/desk-illustration.svg" alt="Consultorias" class="w-72">
+                    <p class="text-button-text text-lg  py-4"><span class="font-medium">Definamos la mejor solución para tu proyecto web.</span> 
+                    <br> 
+                    <br>
+                    Mi objetivo es hacer que el proceso sea lo más sencillo posible para ti, sin importar si eres un gran emprendedor o un profesional. Trabajaré contigo para entender tus necesidades y encontrar la mejor solución que se adapte a tus objetivos y presupuesto.
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="px-8 py-8 md:py-16 md:px-16 text-center font-hind bg-headline">
+            <h5 class="text-button font-hind underline mb-4">Servicios</h5>
+            <h3 class="font-josefin mb-8 text-3xl md:text-5xl text-sub-healine font-medium text-center">Portfolios Web</h3>
+            
+            <article class="flex flex-col items-center lg:flex-row justify-evenly lg:justify-between gap-8 mt-16">
+                <img src="img/youtube_illustration.svg" alt="" class="flex-1 max-w-sm">
+                
+                <div class="px-2 md:px-16 py-8 backdrop-blur-sm bg-background-blue/10 rounded-xl max-w-2xl flex flex-col items-center lg:items-start gap-4">
+                    <p class="font-hind text-sub-healine text-lg md:text-xl text-center md:text-center lg:text-left ">
+                        Como diseñador y desarrollador freelance, sé lo importante que es tener un lugar en línea para mostrar tu trabajo.
+                        <br>
+
+                        Ya sea que te dediques a la fotógrafia, ilustración, escritura o cualquier otro tipo de profesión, estoy aquí para ayudarte a construir una plataforma en línea que refleje tu estilo y te ayude a conectarte con el mundo. 
+                    </p>
+                    <button class=" bg-button text-background-blue w-auto px-4 py-2 h-auto rounded-2xl hover:shadow-xl font-medium text-lg font-hind"><a href="#contacto">¿Quieres saber más?</a></button>
+                </div>
+
+            </article>
+        </section>
+
+
+        
+
+        <!-- Formulario de Contacto -->
+        <section id="contacto" class="w-full h-fit lg:h-screen px-4 md:px-12 py-8 md:py-12 gradient-box">
+
+            <h2 class="text-2xl md:text-3xl font-medium text-headline font-hind text-center">Por mas información puedes contactarme</h2>
+            
+            <article class="flex flex-col md:flex-row gap-8 mt-8 backdrop-blur-sm bg-button-text/10 rounded-lg shadow-xl pb-8">
+                <div class=" px-8 md:px-16 py-8 mt-5 flex-1">
+            
+
+                    <form class="space-y-3 max-w-xl grid grid-cols-1 justify-center mx-auto" name="contact" action="succespage.html" method="POST" data-netlify="true" id="formulario">
+                        
+                        <div class="flex flex-col space-y-2">
+                           <input id="nombre" class="border border-gray-300 px-3 py-2 rounded-lg" type="text" name="name" placeholder="Escribe tu nombre"/>
+                        </div>
+                        
+                        <div class="flex flex-col space-y-2">
+                          <input id="email" class="border border-gray-300 px-3 py-2 rounded-lg" type="email" name="email"  placeholder="Escribe tu email"/>
+                        </div>
+                       
+                        <div class="flex flex-col space-y-2">
+                          <textarea id="mensaje" class="border border-gray-300 px-3 py-2 rounded-lg h-36 resize-none" name="message" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                        
+                        <div>
+                          <button class="w-full flex-1 bg-button text-background font-semibold font-hind text-xl flex justify-center gap-2 items-center rounded-md p-3 hover:drop-shadow-xl" type="submit">Enviar mensaje</button>
+                        </div>
+                      </form>
+                    </div>
+        
+                    <div class="flex flex-col flex-1 items-center justify-center px-8 md:px-16 font-hind text-headline text-lg md:text-xl text-center gap-4">
+                        <img src="img/miscellaneous_icons_5.svg" alt="" class="w-52">
+                        <p>Si estás interesado en trabajar conmigo, no dudes en ponerte en contacto. Me encantaría discutir tus ideas y ayudarte a llevarlas a cabo.
+                        <br> 
+                        <strong>¡Gracias por visitar mi página!</strong></p>
+                    </div>
+            </article>
         </section>
     </main>
-    <footer class="w-full h-fit bg-background p-8">
+    <footer class="w-full h-fit bg-gradient-to-br to-background  from-background-blue/90 px-4  md:px-16 py-8">
     
         <!--links barra de navegacion-->
-        <div class="flex  justify-between mb-5">
-            <ul class="text-base flex flex-col sm:flex-row  text-headline gap-5">
-                <li class="hover:text-paragraph"><a href="#inicio">Volver al inicio</a></li>
-                <li class="hover:text-paragraph"><a href="#sobre-mi">Volver a sobre mí</a></li>
-                <li class="hover:text-paragraph"><a href="#proyectos">Volver a proyectos</a></li>
-            </ul>
+        <div class="flex justify-between">
             
-            <a class="w-10" href="https://www.linkedin.com/in/julian-perez-a5b656157/" target="_blank"><img src="./img/linkedin.svg" alt=""></a>
+                <a href="index.html" class="text-xl font-hind text-button-text font-medium hover:font-bold ">Inicio</a>
+
+                <div class="flex gap-4 justify-center items-center">
+                    <a class="w-6" href="https://wa.me/59892472810?text=!Hola¡%20Estoy%20interesado%20en%20tus%20servicios.%20¿Podemos%20marcar%20una%20reunión?" target="_blank"><img src="./img/whatsapp.svg" alt=""></a>
+                    <a class="w-6" href="https://www.linkedin.com/in/julian-perez-a5b656157/" target="_blank"><img src="./img/linkedin.svg" alt=""></a>
+                    <a class="w-6" href="#" target="_blank"><img src="./img/instagram.svg" alt=""></a>
+                    <a class="w-6 fill-headline" href="https://github.com/jucajulian0907" target="_blank"><img src="./img/square-github.svg" alt=""></a>
+                </div>
+       
+                
+            
         </div>
 
-        <div class="flex flex-col place-content-center text-center text-paragraph">
-            <p>&copy; Julián Pérez. 2022.</p>
-            <p class="italic">Versión 1.0</p>
+        <div class="flex flex-col place-content-center text-center text-sm items-center text-paragraph">
+            <a href="index.html"><img class="w-32" src="img/julianpe-logo.png" alt=""></a>
+            <p>&copy; Julián Pérez. 2023.</p>
+            <p class="italic">Versión 1.0.2</p>
         </div>    
     </footer>
 

@@ -8,4 +8,37 @@
         -webkit-box-shadow: -5px 5px 0px 0px rgba(255,137,6,0.75);
         -moz-box-shadow: -5px 5px 0px 0px rgba(255,137,6,0.75);
     }
+
+    @keyframes bgposition {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            .gradient-box {
+                background-image: linear-gradient(-45deg, #0f0e17, #141033, #131B4A, #301140);
+                animation: bgposition 15s ease-out infinite;
+                background-size: 300% 300%;
+            }
+
+     .fade-in {
+        animation: fade-in 1s ease;
+     }
+     
+     @keyframes fade-in {
+        0% { opacity: 0;
+             filter: blur(20px);
+        }
+        10% {
+            opacity: 1;
+            filter: brightness(2) blur(10px);
+        }
+     }
 }
+
