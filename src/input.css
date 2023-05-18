@@ -3,6 +3,35 @@
 @tailwind utilities;
 
 @layer utilities {
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .text-transparent {
+        color: transparent;
+    }
+    
+    .logotipo {
+        height: 80px;
+        transform: scale(0.7);
+        transition: transform ease .3s;
+        width: auto;
+    }
+
+    .logotipo:hover {
+        height: 80px;
+        transform: scale(1);
+        transition: transform ease .3s;
+        width: auto;
+    }
+
+    .gradient-text {
+        background-image:linear-gradient(90deg, #ef4444, #ff8906,  #FF6B6B);
+    }
+
+  
+
     .box-shadow {
         box-shadow: -5px 5px 0px 0px rgba(255,137,6,0.75);
         -webkit-box-shadow: -5px 5px 0px 0px rgba(255,137,6,0.75);

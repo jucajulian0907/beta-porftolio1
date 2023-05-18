@@ -8,8 +8,7 @@
 <meta name="keywords" content="web, diseño web, desarrollor web, desarrollador, diseñador, desarrollador web, ecommerce, consultoria, freelance">
 <meta property="og:title" content="Julián Pérez. Diseñador y Desarrollador Web">
 <meta property="og:description" content="¿Necesitas una página web para tu negocio? ¿Quieres mejorar la experiencia de usuario en tu sitio? ¡Yo estoy aquí para ayudarte!">
-<meta property="og:image" itemprop="image" content="img/website-capture.png">
-<meta property="og:image" content="url_image">    
+<meta property="og:image" content="img/website-capture.png">
 <meta property="og:type" content="Sitio Web"> 
 <script src="https://kit.fontawesome.com/edc11941db.js" crossorigin="anonymous"></script>
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -29,20 +28,18 @@
 </head>
 
 
-</style>
-
-<body class="box-border w-full h-full scroll-smooth overflow-x-hidden bg-background fade-in">
+<body class="box-border w-full h-full scroll-smooth overflow-x-hidden bg-background fade-in snap-y snap-mandatory">
     <!-- Navegacion y hero section -->
-    <header id="inicio" class="gradient-box h-fit lg:h-screen px-4 md:px-16 rounded-br-xl ">
-        <nav class="flex place-content-between items-center bg-opacity-0 text-headline font-hind text-lg h-fit ">
+    <header id="inicio" class="gradient-box h-fit lg:h-screen px-4 md:px-16 rounded-br-xl snap-start">
+        <nav class="flex place-content-between items-center bg-opacity-0 text-headline font-hind text-md h-24">
             <!--logo/nombre-->
-            <a href="index.html"><img src="img/julianpe-logo.png" alt="logo" class="w-32"></a>
+            <a href="index.html" class=""><img src="img/julianpe-logo.png" alt="logo" class="logotipo block place-content-start -ml-4"></a>
             <!--links barra de navegacion-->
-            <div class="flex place-content-center align-middle ">
-                <ul class="md:flex gap-10 hidden">
+            <div class="flex place-content-center align-middle">
+                <ul class="md:flex gap-10 hidden items-center">
                     <li class="hover:text-paragraph"><a href="#servicios">Servicios</a></li>
                     <li class="hover:text-paragraph"><a href="proyectos.html">Proyectos</a></li>
-                    <li class="bg-background-blue hover:text-background w-36 h-8 rounded-2xl hover:bg-button text-button ring ring-button hover:transition-all flex justify-center items-center hover:font-bold "><a href="#contacto">Contacto</a></li>
+                    <li class="text-button hover:gradient-text hover:text-background-blue w-auto px-4 py-2 rounded-xl ring ring-button transition-all flex justify-center items-center font-bold"><a href="#contacto">Contacto</a></li>
                 </ul>
                 <!--barra responsive-->
                 <div class="flex md:hidden items-center" x-data="{ open: false }" x-transition>
@@ -68,7 +65,7 @@
                         <a class="w-6" href="https://www.linkedin.com/in/julian-perez-a5b656157/" target="_blank"><img src="./img/linkedin.svg" alt=""></a>
                         <a class="w-6" href="#" target="_blank"><img src="./img/instagram.svg" alt=""></a>
                         <a class="w-6 fill-headline" href="https://github.com/jucajulian0907" target="_blank"><img src="./img/square-github.svg" alt=""></a>
-                        <a class="w-6" href="https://wa.me/59892472810?text=!Hola¡%20Estoy%20interesado%20en%20tus%20servicios.%20¿Podemos%20marcar%20una%20reunión?" target="_blank"><img src="./img/whatsapp.svg" alt=""></a>
+                        <a class="w-6" href="https://wa.me/59892472810?text=¡Hola!%20Estoy%20interesado%20en%20tus%20servicios.%20¿Podemos%20marcar%20una%20reunión?" target="_blank"><img src="./img/whatsapp.svg" alt=""></a>
                     </div>
                        
                 
@@ -81,15 +78,17 @@
         </nav>
         <!-- Titulo y boton de llamada a la accion (boton a contactos y github) -->
 
-        <section class="flex flex-col lg:flex-row h-screen w-full place-content-center items-center font-montserrat text-headline transition-all justify-around md:justify-evenly md:align-middle lg:justify-between align-middle py-16  lg:pt-8 lg:pb-16 md:items-center ">
+        <section class="flex flex-col lg:flex-row h-fit w-full place-content-center items-center font-montserrat justify-around md:justify-evenly md:align-middle lg:justify-between align-middle py-8 md:py-16 md:items-center">
             <!-- Encabezado -->
-            <div class="text-center lg:text-left w-full md:max-w-xs lg:max-w-md">
-                <p class="text-2xl font-hind leading-loose font-medium mb-4">¡Hola, soy Julián Pérez!</p>
-                <p class=" text-5xl lg:text-7xl font-josefin font-bold">Diseñador <span class="font-bold text-button animate-colorchange">&</span> Desarrollador Web</p>
+            <div class="text-center lg:text-left w-full md:max-w-xs lg:max-w-lg">
+                <p class="text-2xl md:text-3xl font-hind leading-loose font-medium mb-4 text-headline">¡Hola, soy Julián Pérez!</p>
+                <h1 class="text-5xl lg:text-7xl font-josefin font-bold bg-clip-text bg-gradient-to-r from-alert via-button to-gradient-start text-transparent">Diseñador <span class="font-bold text-button animate-colorchange">&</span> Desarrollador Web</h1>
 
                 <div class="flex flex-row lg:justify-start justify-center gap-5 w-full text-lg py-6 font-bold">
-                    <button class=" bg-button text-background w-36 h-10 rounded-2xl hover:bg-background-blue hover:text-button hover:ring hover:ring-button transition-all hover:transition-all"><a href="#servicios">Servicios</a></button>
-                    <button class="bg-headline text-background w-36 h-10 rounded-2xl"><a class="flex align-middle justify-center items-center gap-2" href="https://github.com/jucajulian0907" target="_blank"><img class="w-5 hover:animate-spin" src="./img/github.svg" alt=""><span>Github</span></a></button>
+
+                    <button class="hover:gradient-text text-headline hover:text-background-blue w-36 h-10 rounded-xl ring ring-button hover:transition-all px-8 py-4 flex items-center transition-all"><a href="#servicios">Servicios</a></button>
+                    
+                    <button class="bg-headline text-background-blue w-36 h-10 px-8 py-4 rounded-xl flex items-center place-content-center"><a class="flex align-middle justify-center items-center gap-2" href="https://github.com/jucajulian0907" target="_blank"><img class="w-5 hover:animate-spin" src="./img/github.svg" alt=""><span>Github</span></a></button>
                 </div>
             </div>
 
@@ -101,16 +100,16 @@
 
 <main class="w-full h-full bg-headline flex flex-col gap-8">
     <!-- Sobre Mi  -->
-        <section id="sobre-mi" class="w-full h-fit scroll-smooth bg-headline px-2 md:px-16 py-12">
-            <h2 class="font-josefin mb-8 text-4xl text-background font-medium text-center">Sobre Mi</h2>
+        <section id="sobre-mi" class="w-full h-fit bg-headline px-2 md:px-16 py-12 snap-start">
+            <h2 class="font-josefin mb-8 text-4xl text-sub-healine font-medium text-center">Sobre Mi</h2>
             <article class="flex justify-between py-8">
                 
-                <p  class="font-hind text-sub-healine w-auto text-lg md:text-xl text-center px-2 md:px-16 py-8 backdrop-blur-sm bg-background-blue/10 rounded-xl">
+                <p  class="font-hind text-sub-healine w-auto text-base md:text-lg text-justify md:text-center px-4 md:px-16 py-8 backdrop-blur-sm bg-background-blue/10 rounded-xl">
                     Soy un desarrollador apasionado por la tecnología y el diseño, siempre con ganas de ayudar a las personas a llevar a cabo sus proyectos web. Mi objetivo es ofrecerte una experiencia de usuario totalmente personalizada y  asi asegurarme de que estés completamente satisfecho con mi trabajo. <br> <strong>¿Necesitas una página web para tu negocio?, ¿Quieres un portfolio donde mostrar tus habilidades? O, ¿Eres un artista que quiere mostrar su trabajo? ¡Yo estoy aquí para ayudarte!</strong>
                 </p>
            </article>  
 
-        <h3 class="text-lg md:text-xl font-medium font-hind text-sub-healine mt-8 mb-16 text-center relative">Puedo trabajar con estas tecnologias y herramientas de diseño</h3>
+        <h3 class="text-lg md:text-xl font-medium font-hind text-sub-healine mt-8 mb-16 text-center relative">Puedo trabajar con estas tecnologias de programación y herramientas de diseño:</h3>
 
         <!-- ///////////////// ICONOS DE TECNOLOGIAS /////////////////////// -->
 
@@ -261,32 +260,33 @@
 
             <h2 class="font-josefin mb-8 text-3xl md:text-5xl text-headline font-medium text-center">Mis Servicios</h2>
 
-            <div id="contenedor-servicios" class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-14 ">
+            <div id="contenedor-servicios" class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8">
 
 
-                <div class="mb-8 md:col-span-2 lg:col-span-1 md:flex-1 flex flex-col items-center justify-start shadow-xl rounded-xl px-4 py-4 backdrop-blur-sm bg-button-text/10">
+                <div class=" mb-8 md:col-span-2 lg:col-span-1 md:flex-1 flex flex-col items-center justify-start shadow-xl rounded-xl px-4 py-4 backdrop-blur-sm bg-button-text/10">
                     <h3 class="font-hind mb-8 text-xl text-button-text font-medium">Diseño y Desarrollo Web</h3>
-                    <img src="img/consultoria.png" alt="Web Design" class="w-60">
-                    <p class="text-button-text text-lg py-4 text-center"><span class="font-medium">¿Tienes un proyecto en mente?</span>
+                    <img src="img/consultoria.png" alt="Web Design" class="w-52">
+                    <p class="text-button-text text-base md:text-lg py-4 text-center"><span class="font-medium">¿Tienes un proyecto en mente?</span>
                     <br>
                     <br>    
                     Puedo crear para ti un sitio web que sea visualmente atractivo, fácil de usar y que transmita correctamente tu mensaje. Trabajaré contigo para entender tus necesidades y construir un sitio web que sea práctico y eficiente para tus visitantes.</p>
                 </div>
     
-                <div class="mb-8 md:flex-1 shadow-xl flex flex-col items-center justify-start rounded-xl px-4 py-4 backdrop-blur-sm bg-button-text/10">
+                <div class=" mb-8 md:flex-1 shadow-xl flex flex-col items-center justify-start rounded-xl px-4 py-4 backdrop-blur-sm bg-button-text/10">
                 <h3 class="font-hind mb-16 text-xl text-button-text font-medium">E-commerce</h3>
-                <img src="img/ecommerce.png" alt="Ecommerce" class="w-72">
-                    <p class="text-button-text text-lg py-4">
+                <img src="img/ecommerce.png" alt="Ecommerce" class="w-56">
+                    <p class="text-button-text text-base md:text-lg py-4">
                         <span class="font-medium">¿Quieres vender en línea sin complicaciones?</span> 
                         <br>
                         <br>
                         Puedo ayudarte a crear una tienda en línea que sea fácil de navegar y que tenga un diseño simple pero efectivo. Trabajaré contigo para entender tus necesidades y construir una tienda en línea que se adapte a tu negocio y a tus clientes.</p>
                 </div>
+
     
                 <div class="mb-8  md:flex-1 shadow-xl flex flex-col items-center justify-start rounded-xl px-4 py-4 backdrop-blur-sm bg-button-text/10">
                     <h3 class="font-hind mb-8 text-xl text-button-text font-medium">Consultorias</h3>
-                    <img src="img/desk-illustration.svg" alt="Consultorias" class="w-72">
-                    <p class="text-button-text text-lg  py-4"><span class="font-medium">Definamos la mejor solución para tu proyecto web.</span> 
+                    <img src="img/desk-illustration.svg" alt="Consultorias" class="w-52">
+                    <p class="text-button-text text-base md:text-lg  py-4"><span class="font-medium">Definamos la mejor solución para tu proyecto web.</span> 
                     <br> 
                     <br>
                     Mi objetivo es hacer que el proceso sea lo más sencillo posible para ti, sin importar si eres un gran emprendedor o un profesional. Trabajaré contigo para entender tus necesidades y encontrar la mejor solución que se adapte a tus objetivos y presupuesto.
@@ -300,17 +300,18 @@
             <h5 class="text-button font-hind underline mb-4">Servicios</h5>
             <h3 class="font-josefin mb-8 text-3xl md:text-5xl text-sub-healine font-medium text-center">Portfolios Web</h3>
             
-            <article class="flex flex-col items-center lg:flex-row justify-evenly lg:justify-between gap-8 mt-16">
-                <img src="img/youtube_illustration.svg" alt="" class="flex-1 max-w-sm">
+            <article class="flex flex-col items-center lg:flex-row justify-evenly lg:justify-around gap-8 mt-16">
+                <img src="img/youtube_illustration.svg" alt="" class="flex-1 w-60 md:max-w-xs">
                 
-                <div class="px-2 md:px-16 py-8 backdrop-blur-sm bg-background-blue/10 rounded-xl max-w-2xl flex flex-col items-center lg:items-start gap-4">
-                    <p class="font-hind text-sub-healine text-lg md:text-xl text-center md:text-center lg:text-left ">
+                <div class="px-4 md:px-16 py-8 backdrop-blur-sm bg-background-blue/10 rounded-xl max-w-2xl flex flex-col items-center lg:items-start gap-4">
+                    <h3 class="font-medium text-sub-healine text-base md:text-lg">Contá tu historia a traves de tu pagina web.</h3>
+                    <p class="font-hind text-sub-healine  text-base md:text-lg text-justify  md:text-center lg:text-left ">
                         Como diseñador y desarrollador freelance, sé lo importante que es tener un lugar en línea para mostrar tu trabajo.
                         <br>
 
-                        Ya sea que te dediques a la fotógrafia, ilustración, escritura o cualquier otro tipo de profesión, estoy aquí para ayudarte a construir una plataforma en línea que refleje tu estilo y te ayude a conectarte con el mundo. 
+                        Ya sea que te dediques a la fotógrafia, ilustración, música o cualquier otro tipo de profesión, estoy aquí para ayudarte a construir una plataforma en línea que refleje tu estilo y te ayude a conectarte con el mundo. 
                     </p>
-                    <button class=" bg-button text-background-blue w-auto px-4 py-2 h-auto rounded-2xl hover:shadow-xl font-medium text-lg font-hind"><a href="#contacto">¿Quieres saber más?</a></button>
+                    <button class="bg-button text-background-blue font-bold w-36 h-10 rounded-xl  px-8 py-4 flex place-content-center items-center transition-all"><a href="#contacto">¡Hagámoslo!</a></button>
                 </div>
 
             </article>
@@ -362,10 +363,10 @@
         <!--links barra de navegacion-->
         <div class="flex justify-between">
             
-                <a href="index.html" class="text-xl font-hind text-button-text font-medium hover:font-bold ">Inicio</a>
+                <a href="#inicio" class="text-xl font-hind text-button-text font-medium hover:font-bold ">Inicio</a>
 
                 <div class="flex gap-4 justify-center items-center">
-                    <a class="w-6" href="https://wa.me/59892472810?text=!Hola¡%20Estoy%20interesado%20en%20tus%20servicios.%20¿Podemos%20marcar%20una%20reunión?" target="_blank"><img src="./img/whatsapp.svg" alt=""></a>
+                    <a class="w-6" href="https://wa.me/59892472810?text=¡Hola!%20Estoy%20interesado%20en%20tus%20servicios.%20¿Podemos%20marcar%20una%20reunión?" target="_blank"><img src="./img/whatsapp.svg" alt=""></a>
                     <a class="w-6" href="https://www.linkedin.com/in/julian-perez-a5b656157/" target="_blank"><img src="./img/linkedin.svg" alt=""></a>
                     <a class="w-6" href="#" target="_blank"><img src="./img/instagram.svg" alt=""></a>
                     <a class="w-6 fill-headline" href="https://github.com/jucajulian0907" target="_blank"><img src="./img/square-github.svg" alt=""></a>
@@ -378,20 +379,10 @@
         <div class="flex flex-col place-content-center text-center text-sm items-center text-paragraph">
             <a href="index.html"><img class="w-32" src="img/julianpe-logo.png" alt=""></a>
             <p>&copy; Julián Pérez. 2023.</p>
-            <p class="italic">Versión 1.0.2</p>
+            <p class="italic">Versión 1.0.3</p>
         </div>    
     </footer>
 
     <script src="./src/app.js"></script>
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PB1VKF4N31"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PB1VKF4N31');
-</script>
 </body>
 </html>
